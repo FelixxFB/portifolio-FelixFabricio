@@ -1,0 +1,146 @@
+/*Importante !!
+Lembrese de implementar um botâo para mudar as cores do site 
+Ex: agora esta em vemlho, dps mudar para as cores do arco iris |random|*/
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&family=Source+Code+Pro:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap');
+*{
+    
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #363636;
+    height: 2000px;
+    padding: 90px;
+}
+
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1C1C1C;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: row;
+    box-shadow: 5px 10px 18px red;
+    
+}
+
+#header:hover{
+    box-shadow: 5px 10px 18px black;
+
+}
+#nav_bar{
+    display: inline-flex;
+    
+}
+
+
+
+.itens_nav_bar{
+    height: 20px;
+    width: 100px;
+    padding: 5px 5;
+    margin: 10px;
+    font-family: 'Signika', sans-serif; 
+    font-size: 18px;
+    color: #FFFF;
+    cursor: pointer;
+    
+}
+.itens_nav_bar span{
+    padding: 5px;
+    border-bottom: 1px solid #FFFF;
+}
+
+.itens_nav_bar span:hover{
+    border-bottom: 2px solid red;
+  
+
+
+}
+
+#logo_felix{
+    width: 100px;
+    height: 90px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+#btn_darkmode{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Signika', sans-serif;
+    border-color: #FFFF;
+    border-radius: 20px;
+    background-color: #1C1C1C;
+    color: #FFFF;
+    cursor: pointer;
+}
+#section_home{
+    width: 60%;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 250px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Signika', sans-serif; 
+   background-color: #1C1C1C;
+   box-shadow: 10px 20px black;
+   
+
+}
+#section_home span{
+    color: red;
+
+}
+
+
+#section_home p{
+    margin-top: 15px;
+    padding: 5px;
+    font-family: 'Signika', sans-serif; 
+    color: #FFFF;
+    border-bottom: 1px solid red;
+    cursor: default;
+    
+    
+}
+
+section h1{
+    width: 60%;
+    color: #FFFF;
+    font-family: 'Signika', sans-serif; 
+    font-size: 50px;
+    border-right: 1px  solid #FFFF;
+    margin: 10px;
+    padding: 1px;
+    padding-right: 1px;
+    cursor: default;
+    max-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: wink normal infinite 1s, write normal 7s steps(55) both;
+}
+@keyframes wink {
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write{
+    100%{
+        max-width: 100%;
+    }
+}
